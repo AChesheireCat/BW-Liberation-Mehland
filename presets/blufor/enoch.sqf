@@ -17,10 +17,10 @@ FOB_box_typename = "B_Slingload_01_Cargo_F";                            // This 
 FOB_truck_typename = "B_T_Truck_01_box_F";                              // This is the FOB as a vehicle.
 Arsenal_typename = "B_supplyCrate_F";                                   // This is the virtual arsenal as portable supply crates.
 Respawn_truck_typename = "I_E_Truck_02_Medical_F";                      // This is the mobile respawn (and medical) truck.
-huron_typename = "B_Heli_Transport_03_unarmed_F";                       // This is Spartan 01, a multipurpose mobile respawn as a helicopter.
+huron_typename = "CUP_B_CH47F_USA";                                     // This is Spartan 01, a multipurpose mobile respawn as a helicopter.
 crewman_classname = "I_E_Crew_F";                                       // This defines the crew for vehicles.
 pilot_classname = "I_E_Helipilot_F";                                    // This defines the pilot for helicopters.
-KP_liberation_little_bird_classname = "B_Heli_Light_01_F";              // These are the little birds which spawn on the Freedom or at Chimera base.
+KP_liberation_little_bird_classname = "MELB_MH6M";                      // These are the little birds which spawn on the Freedom or at Chimera base.
 KP_liberation_boat_classname = "B_T_Boat_Transport_01_F";               // These are the boats which spawn at the stern of the Freedom.
 KP_liberation_truck_classname = "I_E_Truck_02_transport_F";             // These are the trucks which are used in the logistic convoy system.
 KP_liberation_small_storage_building = "ContainmentArea_02_sand_F";     // A small storage area for resources.
@@ -73,6 +73,8 @@ light_vehicles = [
     ["I_E_Offroad_01_F",60,0,35],                                       // Offroad
     ["I_E_Offroad_01_covered_F",60,0,35],                               // Offroad (Covered)
     ["I_E_Offroad_01_comms_F",60,0,35],                                 // Offroad (Comms)
+    ["O_G_Van_01_transport_F",60,0,20],                                 // Civ Truck (Camo)
+    ["B_T_Truck_01_flatbed_F",60,0,40],                                 // HEMTT Flatbed
     ["I_E_Van_02_vehicle_F",70,0,45],                                   // Transporter
     ["I_E_Van_02_transport_MP_F",70,0,45],                              // Transporter (MP)
     ["I_E_Van_02_transport_F",70,0,45],                                 // Transporter (Transporter)
@@ -114,7 +116,8 @@ air_vehicles = [
     ["B_Plane_Fighter_01_Stealth_F",1500,1750,450],                     // F/A-181 Black Wasp II (Stealth)
     ["B_T_VTOL_01_armed_F",750,1500,500],                               // V-44 X Blackfish (Armed)
     ["B_T_VTOL_01_infantry_F",750,0,500],                               // V-44 X Blackfish (Infantry)
-    ["B_T_VTOL_01_vehicle_F",750,0,500]                                 // V-44 X Blackfish (Vehicle)
+    ["B_T_VTOL_01_vehicle_F",750,0,500],                                // V-44 X Blackfish (Vehicle)
+    ["CUP_O_MI6A_SLA",750,0,500]
 ];
 
 static_vehicles = [
