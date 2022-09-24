@@ -70,10 +70,10 @@ infantry_units = [
 
 light_vehicles = [
     ["I_E_Quadbike_01_F",50,0,25],                                      // Quad Bike
+    ["O_G_Van_01_transport_F",60,0,20],                                 // Civ Truck (Camo)
     ["I_E_Offroad_01_F",60,0,35],                                       // Offroad
     ["I_E_Offroad_01_covered_F",60,0,35],                               // Offroad (Covered)
     ["I_E_Offroad_01_comms_F",60,0,35],                                 // Offroad (Comms)
-    ["O_G_Van_01_transport_F",60,0,20],                                 // Civ Truck (Camo)
     ["B_T_Truck_01_flatbed_F",60,0,40],                                 // HEMTT Flatbed
     ["I_E_Van_02_vehicle_F",70,0,45],                                   // Transporter
     ["I_E_Van_02_transport_MP_F",70,0,45],                              // Transporter (MP)
