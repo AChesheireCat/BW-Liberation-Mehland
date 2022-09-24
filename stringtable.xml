@@ -46,7 +46,7 @@
 <Project name="Liberation">
     <Package name="Liberation">
         <Key ID="STR_MISSION_TITLE">
-            <Original>CTI 34 KP Liberation Altis v0.96.7a</Original>
+            <Original>BW Liberation</Original>
         </Key>
         <Key ID="STR_MISSION_VERSION">
             <Original>v0.96.7a</Original>
@@ -3813,7 +3813,7 @@
 
         <!-- Added or changed in v0.95 -->
         <Key ID="STR_INDIV_FLAG">
-            <Original>Killah Potatoes flag</Original>
+            <Original>Bourbon Warfare Flag</Original>
             <German>Killah Potatoes Flagge</German>
             <Spanish>Bandera de Killah Potatoes</Spanish>
             <Russian>Флаг Killah Potatoes</Russian>
