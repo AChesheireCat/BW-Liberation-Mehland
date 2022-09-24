@@ -57,7 +57,8 @@ if ((isNil {player getVariable "bis_revive_ehHandleHeal"} || isDedicated) && !(b
 
 KPLIB_init = true;
 
-[] execVM "fn_advancedTowingInit.sqf";
+[] execVM "functions\fn_advancedTowingInit.sqf";
+[] execVM "functions\fn_advancedSlingLoadingInit.sqf";
 
 // Notify clients that server is ready
 if (isServer) then {
