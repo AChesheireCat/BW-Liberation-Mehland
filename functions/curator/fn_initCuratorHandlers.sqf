@@ -56,8 +56,7 @@ if (isServer) then {
             _zeus setCuratorCoef ["Edit", -1e8];
             _zeus setCuratorCoef ["Destroy", -1e8];
             _zeus setCuratorCoef ["Delete", 0];
-            
-            removeAllCuratorAddons _zeus;
+
         } else {
             _zeus setVariable ["Addons", 3, true];
             _zeus setVariable ["BIS_fnc_initModules_disableAutoActivation", false];
