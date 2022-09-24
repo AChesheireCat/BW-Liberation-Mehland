@@ -401,7 +401,7 @@
             <Czech>-- NELZE NALOŽIT</Czech>
         </Key>
         <Key ID="STR_BOX_LOADED">
-            <Original>Ammo box successfully loaded on the transport vehicle.</Original>
+            <Original>Crate successfully loaded on the transport vehicle.</Original>
             <French>La caisse de munitions a été chargée sur le véhicule de transport.</French>
             <German>Munitionskiste erfolgreich auf das Transportfahrzeug geladen.</German>
             <Spanish>Caja de munición cargada correctamente en el vehículo de transporte</Spanish>
@@ -415,7 +415,7 @@
             <Czech>Bedna úspěšně naložena do vozidla.</Czech>
         </Key>
         <Key ID="STR_BOX_UNLOADED">
-            <Original>Ammo box successfully unloaded from the transport vehicle.</Original>
+            <Original>Crate successfully unloaded from the transport vehicle.</Original>
             <French>La caisse de munitions a été déchargée du véhicule de transport.</French>
             <German>Munitionskiste erfolgreich vom Transportfahrzeug abgeladen.</German>
             <Spanish>Caja de munición descargada correctamente del vehículo de transporte</Spanish>
