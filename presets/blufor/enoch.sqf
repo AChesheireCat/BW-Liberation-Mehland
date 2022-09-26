@@ -117,7 +117,8 @@ air_vehicles = [
     ["B_T_VTOL_01_armed_F",750,1500,500],                               // V-44 X Blackfish (Armed)
     ["B_T_VTOL_01_infantry_F",750,0,500],                               // V-44 X Blackfish (Infantry)
     ["B_T_VTOL_01_vehicle_F",750,0,500],                                // V-44 X Blackfish (Vehicle)
-    ["CUP_O_MI6A_SLA",750,0,500]
+    ["CUP_O_MI6A_SLA",750,0,500],                                       // MI-6 VIV
+    ["O_Heli_Transport_04_F",750,0,500]                                 // Taru (black)
 ];
 
 static_vehicles = [
@@ -243,7 +244,15 @@ support_vehicles = [
     ["I_E_Truck_02_Ammo_F",125,200,75],                                 // Zamak Ammo
     ["B_Slingload_01_Repair_F",275,0,0],                                // Huron Repair
     ["B_Slingload_01_Fuel_F",75,0,200],                                 // Huron Fuel
-    ["B_Slingload_01_Ammo_F",75,200,0]                                  // Huron Ammo
+    ["B_Slingload_01_Ammo_F",75,200,0],                                 // Huron Ammo
+    ["Land_Pod_Heli_Transport_04_bench_F",20,0,0],                      // Taru Bench Pod
+    ["Land_Pod_Heli_Transport_04_covered_F",30,0,0],                    // Taru Transport Pod
+    ["Land_Pod_Heli_Transport_04_medevac_F",75,0,0],                    // Taru Medical Pod 
+    ["Land_Pod_Heli_Transport_04_box_F",40,0,0],                        // Taru Cargo Pod
+    ["Land_Pod_Heli_Transport_04_repair_F",275,0,0],                    // Taru Repair Pod
+    ["Land_Pod_Heli_Transport_04_fuel_F",75,0,200],                     // Taru Fuel Pod
+    ["Land_Pod_Heli_Transport_04_ammo_F",75,200,0]                      // Taru Ammo Pod 
+
 ];
 
 /*

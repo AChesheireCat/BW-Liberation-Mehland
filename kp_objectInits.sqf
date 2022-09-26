@@ -128,5 +128,19 @@ KPLIB_objectInits = [
             _this allowFleeing 0;
         },
         true
-    ]
+    ],
+
+    // Set Taru texture to Black (and pods)
+    [["O_Heli_Transport_04_F"], {[_this, ["Black",1], true] call BIS_fnc_initVehicle;}],
+    [["Land_Pod_Heli_Transport_04_covered_F"], {[_this, ["Black",1], true] call BIS_fnc_initVehicle;}],
+    [["Land_Pod_Heli_Transport_04_medevac_F"], {[_this, ["Black",1], true] call BIS_fnc_initVehicle;}],
+    [["Land_Pod_Heli_Transport_04_box_F"], {_this setObjectTextureGlobal [0, "A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_Black_CO.paa"];}],
+    [["Land_Pod_Heli_Transport_04_box_F"], {_this setObjectTextureGlobal [1, "A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_Black_CO.paa"];}],
+    [["Land_Pod_Heli_Transport_04_repair_F"], {_this setObjectTextureGlobal [0, "A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_Black_CO.paa"];}],
+    [["Land_Pod_Heli_Transport_04_repair_F"], {_this setObjectTextureGlobal [1, "A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_Black_CO.paa"];}],
+    [["Land_Pod_Heli_Transport_04_fuel_F"], {_this setObjectTextureGlobal [0, "A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_Black_CO.paa"];}],
+    [["Land_Pod_Heli_Transport_04_fuel_F"], {_this setObjectTextureGlobal [1, "A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_Black_CO.paa"];}],
+    [["Land_Pod_Heli_Transport_04_ammo_F"], {_this setObjectTextureGlobal [0, "A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_Black_CO.paa"];}],
+    [["Land_Pod_Heli_Transport_04_ammo_F"], {_this setObjectTextureGlobal [1, "A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_Black_CO.paa"];}]
+
 ];
