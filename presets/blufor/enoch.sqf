@@ -25,7 +25,7 @@ KP_liberation_boat_classname = "B_T_Boat_Transport_01_F";               // These
 KP_liberation_truck_classname = "I_E_Truck_02_transport_F";             // These are the trucks which are used in the logistic convoy system.
 KP_liberation_small_storage_building = "ContainmentArea_02_sand_F";     // A small storage area for resources.
 KP_liberation_large_storage_building = "ContainmentArea_01_sand_F";     // A large storage area for resources.
-KP_liberation_recycle_building = "Land_RepairDepot_01_green_F";         // The building defined to unlock FOB recycling functionality.
+KP_liberation_recycle_building = "Land_Repair_center";                  // The building defined to unlock FOB recycling functionality.
 KP_liberation_air_vehicle_building = "I_E_Radar_System_01_F";           // The building defined to unlock FOB air vehicle functionality.
 KP_liberation_heli_slot_building = "Land_HelipadSquare_F";              // The helipad used to increase the GLOBAL rotary-wing cap.
 KP_liberation_plane_slot_building = "Land_TentHangar_V1_F";             // The hangar used to increase the GLOBAL fixed-wing cap.
@@ -82,7 +82,7 @@ light_vehicles = [
     ["B_T_LSV_01_armed_F",75,40,50],                                    // Prowler (HMG)
     ["B_T_LSV_01_AT_F",75,60,50],                                       // Prowler (AT)
     ["I_E_Truck_02_transport_F",125,0,75],                              // Zamak Transport
-    ["I_E_Truck_02_F",125,0,75],                                        // Zamak Transport (Covered)
+    ["CUP_I_T810_Unarmed_LDF",125,0,75],                                // Tatra Transport (Covered)
     ["B_UGV_01_F",150,0,50],                                            // UGV Stomper
     ["B_UGV_01_rcws_F",150,40,50],                                      // UGV Stomper (RCWS)
     ["B_T_Boat_Transport_01_F",100,0,25],                               // Assault Boat
@@ -239,9 +239,9 @@ support_vehicles = [
     ["ACE_Track",10,0,0],
     ["Land_CanisterFuel_F",0,0,2],
     ["I_E_Van_02_medevac_F",150,0,80],                                  // Transporter (Ambulance)
-    ["I_E_Truck_02_Box_F",325,0,75],                                    // Zamak Repair
-    ["I_E_Truck_02_fuel_F",125,0,275],                                  // Zamak Fuel
-    ["I_E_Truck_02_Ammo_F",125,200,75],                                 // Zamak Ammo
+    ["CUP_I_T810_Repair_LDF",325,0,75],                                 // Tatra Repair
+    ["CUP_I_T810_Refuel_LDF",125,0,275],                                // Tatra Fuel
+    ["CUP_I_T810_Reammo_LDF",125,200,75],                               // Tatra Ammo
     ["B_Slingload_01_Repair_F",275,0,0],                                // Huron Repair
     ["B_Slingload_01_Fuel_F",75,0,200],                                 // Huron Fuel
     ["B_Slingload_01_Ammo_F",75,200,0],                                 // Huron Ammo

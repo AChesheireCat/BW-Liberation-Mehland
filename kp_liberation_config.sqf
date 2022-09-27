@@ -175,8 +175,9 @@ KP_liberation_preset_civilians = 0;
 13 = CSAT Hex arsenal preset
 14 = CSAT Green Hex arsenal preset
 15 = AAF arsenal preset
-16 = LDF arsenal preset */
-KP_liberation_arsenal = 16;
+16 = LDF arsenal preset 
+17 = (BW CUSTOM) CUP/VN/Vanilla LDF preset */
+KP_liberation_arsenal = 17;
 
 /* - Fuel consumption settings.
 Time in minutes till a full tank depletes whilst the vehicle is standing still with a running engine. */
