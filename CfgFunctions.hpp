@@ -100,4 +100,5 @@ class KPLIB {
     };
     #include "scripts\client\CfgFunctions.hpp"
     #include "scripts\server\CfgFunctions.hpp"
+    #include "BW\radio_chatter\functions.hpp"
 };
