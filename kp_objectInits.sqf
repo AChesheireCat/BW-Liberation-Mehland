@@ -141,6 +141,10 @@ KPLIB_objectInits = [
     [["Land_Pod_Heli_Transport_04_fuel_F"], {_this setObjectTextureGlobal [0, "A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_Black_CO.paa"];}],
     [["Land_Pod_Heli_Transport_04_fuel_F"], {_this setObjectTextureGlobal [1, "A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_Black_CO.paa"];}],
     [["Land_Pod_Heli_Transport_04_ammo_F"], {_this setObjectTextureGlobal [0, "A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_Black_CO.paa"];}],
-    [["Land_Pod_Heli_Transport_04_ammo_F"], {_this setObjectTextureGlobal [1, "A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_Black_CO.paa"];}]
+    [["Land_Pod_Heli_Transport_04_ammo_F"], {_this setObjectTextureGlobal [1, "A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_Black_CO.paa"];}],
+
+    // ACRE Racks
+    // Adds 117 to Comms Offroad
+    [["I_E_Offroad_01_comms_F"], {[_this, ["ACRE_VRC103", "Upper Dash", "Dash", false, ["inside","outside"], [], "ACRE_PRC117", [], []], false] call acre_api_fnc_addRackToVehicle;}]
 
 ];
