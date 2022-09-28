@@ -7,7 +7,7 @@
 	// 	arry_pos_bombing - where bobbing arty
 
 // done example
-// [[200,200,0],"CPC_ME_O_KAM_D30",[400,400,0]] execVM "SPEC\other_missions\mission_7\mission_1.sqf";
+// [[200,200,0],"CPC_ME_O_KAM_D30",[400,400,0]] execVM "BW\other_missions\mission_7\mission_1.sqf";
 
 //param
 params [
@@ -18,7 +18,7 @@ params [
 ];
 
 
-//artilery
+//artillery
 private _artilery_1 = _class_name_artilery createVehicle (getMarkerPos _spawnPointSector);
 private _artilery_2 = _class_name_artilery createVehicle (_artilery_1 getPos[10 + random 10,random 360]);
 private _artilery_3 = _class_name_artilery createVehicle (_artilery_1 getPos[30 + random 10,random 360]);
@@ -46,7 +46,7 @@ _area_pos_bombing_x = (_arry_pos_bombing select 0) + selectRandom[+100,-100] + r
 _area_pos_bombing_y = (_arry_pos_bombing select 1) + selectRandom[+100,-100] + random [-200, 0, 200];
 private	_bomb_1 = createVehicle ["BO_GBU12_LGB",[_area_pos_bombing_x, _area_pos_bombing_y, _arry_pos_bombing select 2], [], 0, "FLY"];
 
-[[], {hint "Вражеская артелерия обстреливает мирные города! Уничтожте артелерию!"}] remoteExec ["call"];
+[[], {hint "Enemy artillery is shelling civilian positions! Find and destroy it!"}] remoteExec ["call"];
 
 //marker
 private _Marker7 = createMarker ["Marker7", _artilery_1 getPos [random 300, random 360]];
@@ -70,7 +70,7 @@ deleteMarker _Marker7;
 
 private _rewards = createHashMap;
 _rewards set ["intel", 0];
-["SPEC_liberation_missionEnd", ["SPEC_other_missions_destroyArty", "SUCCEEDED", _rewards]] call CBA_fnc_serverEvent;
+["BW_liberation_missionEnd", ["BW_other_missions_destroyArty", "SUCCEEDED", _rewards]] call CBA_fnc_serverEvent;
 
 sleep 10;
 ["Task_07"] call BIS_fnc_deleteTask;

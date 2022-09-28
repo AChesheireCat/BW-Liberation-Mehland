@@ -7,7 +7,7 @@
 	// 	pos_base - pos base to need delivery MHQ
 
 // done example
-// [[200,200,0],"BlackhawkWreck","CargoNet_01_box_F",[1000,1000,0]] execVM "SPEC\other_missions\mission_6\mission_1.sqf";
+// [[200,200,0],"BlackhawkWreck","CargoNet_01_box_F",[1000,1000,0]] execVM "BW\other_missions\mission_6\mission_1.sqf";
 
 //param
 params ["_pos_mission", "_class_name_vehicle", "_class_name_box", "_pos_base"];
@@ -29,9 +29,9 @@ private _Marker6 = createMarker ["Marker6", _Plane_1 getPos [random 300, random 
 private _smoke6 = "test_EmptyObjectForSmoke" createVehicle getPos _Plane_1;
 _smoke6 setPos(getPos _Plane_1);
 //task
-["Task_06", true, ["Эвакуировать черный ящик из подбитого вертолета","Эвакуировать черный ящик из подбитого вертолета","respawn_west"], getMarkerPos _Marker6, "CREATED", 5, true, true, "takeoff", true] call BIS_fnc_setTask;
+["Task_06", true, ["Retrive black box from downed enemy helicopter","Retrive black box from downed enemy helicopter","respawn_west"], getMarkerPos _Marker6, "CREATED", 5, true, true, "takeoff", true] call BIS_fnc_setTask;
 
-//wait continer on base
+//wait until container arrives at base
 waitUntil{
 sleep 10;
 (getPos _Cargo_1) inArea [_pos_base, 100, 100, 0, false] or !alive _Cargo_1
@@ -43,7 +43,7 @@ if(!alive _Cargo_1) exitwith {
 
     private _penalty = createHashMap;
     _penalty set ["intel", 10];
-    ["SPEC_liberation_missionEnd", ["SPEC_other_missions_damageTransport", "FAILED", _penalty]] call CBA_fnc_serverEvent;
+    ["BW_liberation_missionEnd", ["BW_other_missions_damageTransport", "FAILED", _penalty]] call CBA_fnc_serverEvent;
 
 	sleep 10;
 	["Task_06"] call BIS_fnc_deleteTask;
@@ -56,7 +56,7 @@ deleteMarker _Marker6;
 
 private _rewards = createHashMap;
 _rewards set ["intel", 10];
-["SPEC_liberation_missionEnd", ["SPEC_other_missions_damageTransport", "SUCCEEDED", _rewards]] call CBA_fnc_serverEvent;
+["BW_liberation_missionEnd", ["BW_other_missions_damageTransport", "SUCCEEDED", _rewards]] call CBA_fnc_serverEvent;
 
 sleep 10;
 ["Task_06"] call BIS_fnc_deleteTask;

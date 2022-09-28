@@ -30,7 +30,7 @@ if (isServer) then {
                         } forEach (_this # 0);
                     }, [units _grp]]
                 }
-            ] spawn SPEC_fnc_other_missions_destroyArty;
+            ] spawn BW_fnc_other_missions_destroyArty;
         };
     }] call CBA_fnc_addEventHandler;
 };

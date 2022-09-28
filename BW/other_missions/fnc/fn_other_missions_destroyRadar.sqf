@@ -1,6 +1,6 @@
 private _nearbyLocations = nearestLocations [[0,0,0], ["NameVillage", "Name", "NameCity", "NameCityCapital"], 10000];
-private _randomLoacation = getPos selectRandom _nearbyLocations;
-private _find_pos = [_randomLoacation, 500, 1000, 30, 0, 0.9, 0] call BIS_fnc_findSafePos;
+private _randomLocation = getPos selectRandom _nearbyLocations;
+private _find_pos = [_randomLocation, 500, 1000, 30, 0, 0.9, 0] call BIS_fnc_findSafePos;
 
 _radar_1 = "rhs_prv13" createVehicle _find_pos;
 
@@ -11,69 +11,69 @@ private _Marker10 = createMarker ["Marker10", _radar_1 getPos [random 500, rando
 "Marker10" setMarkerColor "ColorBlack";
 "Marker10" setMarkerBrush "Cross";
 
-["Task_10", true, ["Уничтожить РЛС","Уничтожить РЛС","respawn_west"], getMarkerPos _Marker10, "CREATED", 5, true, true, "meet", true] call BIS_fnc_setTask;
+["Task_10", true, ["Destroy the radar","Destroy the radar","respawn_west"], getMarkerPos _Marker10, "CREATED", 5, true, true, "meet", true] call BIS_fnc_setTask;
 
 [
-	getPos _radar_1,	// массив координатов где будет центр здания
+	getPos _radar_1,	// array of coordinates where the center of the building will be 
 
-	EAST,	// сторона ботов можнт быть: EAST, WEST, independent
+	EAST,	// the side of the enemy troops: EAST, WEST, independent
 
 	["CPC_ME_O_KAM_soldier_Medic",
-"CPC_ME_O_KAM_soldier_AR",
-"CPC_ME_O_KAM_soldier_TL",
-"CPC_ME_O_KAM_soldier_AA",
-"CPC_ME_O_KAM_soldier_LAT"],
+	"CPC_ME_O_KAM_soldier_AR",
+	"CPC_ME_O_KAM_soldier_TL",
+	"CPC_ME_O_KAM_soldier_AA",
+	"CPC_ME_O_KAM_soldier_LAT"],
 
 	["CPC_ME_O_KAM_uaz_spg9",
-"CPC_ME_O_KAM_uaz_dshkm"],
+	"CPC_ME_O_KAM_uaz_dshkm"],
 
 	["CPC_ME_O_KAM_BTR70",
-"CPC_ME_O_KAM_BRDM2",
-"CPC_ME_O_KAM_BMP1",
-"CPC_ME_O_KAM_T72B"],
+	"CPC_ME_O_KAM_BRDM2",
+	"CPC_ME_O_KAM_BMP1",
+	"CPC_ME_O_KAM_T72B"],
 
 	["CPC_ME_O_KAM_ZSU",
-"CPC_ME_O_KAM_ural_Zu23"],
+	"CPC_ME_O_KAM_ural_Zu23"],
 
 	["CPC_ME_O_KAM_uh1h_gunship",
-"CPC_ME_O_KAM_Mi24D_Early"],
+	"CPC_ME_O_KAM_Mi24D_Early"],
 
 	["CPC_ME_O_KAM_DSHKM",
-"CPC_ME_O_KAM_Igla_AA_pod",
-"CPC_ME_O_KAM_ZU23",
-"CPC_ME_O_KAM_2b14_82mm"],
+	"CPC_ME_O_KAM_Igla_AA_pod",
+	"CPC_ME_O_KAM_ZU23",
+	"CPC_ME_O_KAM_2b14_82mm"],
 
-	200, // радиус (от центра) размещения статичных орудий(м)
+	200, // radius from the center for placement of static guns (meters)
 
-	6, // количество статичных орудий
+	6, // number of static guns
 
-	4,	// количество легких машин которые будут патрулировать зону
+	4,	// number of light vehicles on patrol in area
 
-	1,	// количество тяжолой техники которая будует патрулировать зону
+	1,	// number of heavy vehicles on patrol in area
 
-	1,	// количество самоходных зенитныйх установок которые будут патрулировать зону
+	1,	// number of self-propelled AA vehicles on patrol in area 
 
-	0,	//	количество вертолетов которые будут патрулировать зону
+	0,	// number of helicopters on patrol in area
 
-	3,	// количество групп ботов которые будет охранять зону
+	3,	// number of enemy squads on patrol in area
 
-	3,	//	количество ботов в группах которые будут охранять зону
+	3,	//	number of troops in enemy squads 
 
-	30,	// шанс появления бота в здании(на крыше) в % от 0 до 100
+	30,	//  chance of enemy troop appearing in building/on roofs
 
-	2000, // радиус активации игроком
+	2000, // player activation radius
 
-	200,	// радиус патрулирования ботов
+	200,	// enemy patrol radius
 
-	200,	// радиус размещения легких машин которые будут патрулировать зону(чем больше машин тем больше зону лучше сделать)
+	200,	// radius of placement of enemy light vehicles (the more vehicles, the larger this should be)
 
-	400,	// радиус патрулирования всех машин и легких танков
+	400,	// patrol radius of all vehicles and light tanks
 
-	1000,	// радиус патрулирования вертолетов
+	1000,	// patrol radius of helicopters
 
-	false	// удалять ли зону после активации если в зоне активации не осталось игроков
+	false	// whether to delete the zone after activation if there are no players left in the activation zone
 
-] execVM "SPEC\other_missions\fnc\fn_other_missions_spawnEnemyBot.sqf";
+] execVM "BW\other_missions\fnc\fn_other_missions_spawnEnemyBot.sqf";
 
 waitUntil{
 	sleep 10;

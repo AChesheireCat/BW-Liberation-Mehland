@@ -17,19 +17,19 @@ waitUntil{
 // create c130
 _C_130 = "C130J_wreck_EP1" createVehicle _pos_from_mission;
 // create container
-kontainer_for_mission_rabbit = "CBRNContainer_01_closed_yellow_F" createVehicle _pos_from_mission;
-kontainer_for_mission_rabbit attachTo [_C_130, [0, -7, -4]];
-publicVariable "kontainer_for_mission_rabbit";
+container_for_mission_BW = "CBRNContainer_01_closed_yellow_F" createVehicle _pos_from_mission;
+container_for_mission_BW attachTo [_C_130, [0, -7, -4]];
+publicVariable "container_for_mission_BW";
 // create action
 [[], {
  _action_1 = ["TestAction 1","<t color='#ff2e2e'>Уничтожить</t>","",{
-  deleteVehicle kontainer_for_mission_rabbit
+  deleteVehicle container_for_mission_BW
  },{true}] call ace_interact_menu_fnc_createAction;
- [kontainer_for_mission_rabbit, 0, ["ACE_MainActions"], _action_1] call ace_interact_menu_fnc_addActionToObject;
+ [container_for_mission_BW, 0, ["ACE_MainActions"], _action_1] call ace_interact_menu_fnc_addActionToObject;
 }] remoteExec ["call"];
 
 // create task
-["Task_13", true, ["Уничтожить образцы хим оружия","Уничтожить образцы хим оружия","respawn_west"], getPos _C_130, "CREATED", 5, true, true, "search", true] call BIS_fnc_setTask;
+["Task_13", true, ["Destroy samples of chemical weapons","Destroy samples of chemical weapons","respawn_west"], getPos _C_130, "CREATED", 5, true, true, "search", true] call BIS_fnc_setTask;
 
 // create bmk
 _pos_from_mission set [2,0];
@@ -63,14 +63,14 @@ _DHKM = [getPos _lodka, 180, "rhsgref_ins_g_DSHKM", _side] call BIS_fnc_spawnVeh
 
 waitUntil{
  sleep 5;
- !alive kontainer_for_mission_rabbit
+ !alive container_for_mission_BW
 };
 
 ["Task_13","SUCCEEDED"] call BIS_fnc_taskSetState;
 
 private _rewards = createHashMap;
 _rewards set ["intel", 10];
-["SPEC_liberation_missionEnd", ["SPEC_other_missions_destroyBCW", "SUCCEEDED", _rewards]] call CBA_fnc_serverEvent;
+["BW_liberation_missionEnd", ["BW_other_missions_destroyBCW", "SUCCEEDED", _rewards]] call CBA_fnc_serverEvent;
 
 sleep 10;
 ["Task_13"] call BIS_fnc_deleteTask;
