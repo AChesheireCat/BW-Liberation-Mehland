@@ -321,6 +321,10 @@ zeropos = [0,0,0];
 KPLIB_sarWreck = "Land_Wreck_Heli_Attack_01_F";
 KPLIB_sarFire = "test_EmptyObjectForFireBig";
 
+if (isNil "KPLIB_b_haloParachute") then {
+    KPLIB_b_haloParachute = "B_Parachute";
+};
+
 KPLIB_initPresets = true;
 
 if (isServer) then {[format ["----- Preset initialization finished. Time needed: %1 seconds -----", diag_ticktime - _start], "PRESETS"] call KPLIB_fnc_log;};
