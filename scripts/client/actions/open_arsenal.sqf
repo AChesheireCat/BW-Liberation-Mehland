@@ -82,8 +82,13 @@ while { dialog && (alive player) && edit_loadout == 0 } do {
 
     if ( load_loadout > 0 ) then {
         private _loaded_loadout = _loadouts_data select (lbCurSel 201);
+
         if (KP_liberation_ace && KP_liberation_arsenal_type) then {
-            player setUnitLoadout (_loaded_loadout select 1);
+            if (count (_loaded_loadout select 1) == 2) then {
+                player setUnitLoadout ((_loaded_loadout select 1) select 0);
+            } else {
+                player setUnitLoadout (_loaded_loadout select 1);
+            }
         } else {
             [player, [profileNamespace, _loaded_loadout]] call BIS_fnc_loadInventory;
         };

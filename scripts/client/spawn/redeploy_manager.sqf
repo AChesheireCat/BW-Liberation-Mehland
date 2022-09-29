@@ -189,13 +189,16 @@ while {true} do {
             player setposATL [((_destpos select 0) + 5) - (random 10),((_destpos select 1) + 5) - (random 10),(_destpos select 2)];
         };
 
-        if ((lbCurSel 203) > 0) then {
-            private _selectedLoadout = _loadouts_data select ((lbCurSel 203) - 1);
-            if (KP_liberation_ace && KP_liberation_arsenal_type) then {
-                player setUnitLoadout (_selectedLoadout select 1);
+        private _loaded_loadout = _loadouts_data select (lbCurSel 201);
+
+        if (KP_liberation_ace && KP_liberation_arsenal_type) then {
+            if (count (_loaded_loadout select 1) == 2) then {
+                player setUnitLoadout ((_loaded_loadout select 1) select 0);
             } else {
-                [player, [profileNamespace, _selectedLoadout]] call BIS_fnc_loadInventory;
-            };
+                player setUnitLoadout (_loaded_loadout select 1);
+            }
+        } else {
+            [player, [profileNamespace, _loaded_loadout]] call BIS_fnc_loadInventory;
         };
     };
 
