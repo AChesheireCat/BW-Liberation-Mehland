@@ -230,9 +230,6 @@ class CfgDiscordRichPresence {
 class CfgFunctions {
     #include "CfgFunctions.hpp"
     #include "KP\KPPLM\KPPLM_functions.hpp"
-    class KP {
-        #include "KP\KPCF\functions.hpp"
-    };
 };
 
 class CfgRespawnTemplates {
@@ -250,5 +247,3 @@ class CfgTaskDescriptions {
 #include "GREUH\UI\GREUH_interface.hpp"
 #include "KP\KPGUI\KPGUI_defines.hpp"
 #include "KP\KPPLM\ui\KPPLM_dialog.hpp"
-#include "KP\KPCF\ui\defines.hpp" 
-#include "KP\KPCF\ui\KP_cratefiller_dialog.hpp"
