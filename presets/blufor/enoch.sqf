@@ -104,7 +104,7 @@ heavy_vehicles = [
 air_vehicles = [
     ["I_E_UAV_01_F",75,0,25],                                           // AR-2 Darter
     ["I_E_UAV_06_F",80,0,30],                                           // AL-6 Pelican
-    ["B_Heli_Light_01_F",200,0,100],                                    // MH-9 Hummingbird
+    ["MELB_MH6M",200,0,100],                                            // CUP MELB
     ["I_E_Heli_light_03_unarmed_F",225,0,125],                          // WY-55 Czapla
     ["I_E_Heli_light_03_dynamicLoadout_F",225,200,125],                 // WY-55 Czapla (Armed)
     ["B_Heli_Transport_03_F",300,80,175],                               // CH-67 Huron (Armed)
