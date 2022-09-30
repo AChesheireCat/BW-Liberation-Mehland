@@ -149,6 +149,6 @@ KPLIB_objectInits = [
 
     // ACRE Racks
     // Adds 117 to Comms Offroad
-    [["I_E_Offroad_01_comms_F"], {[_this, ["ACRE_VRC103", "Upper Dash", "Dash", false, ["inside","outside"], [], "ACRE_PRC117", [], []], false] call acre_api_fnc_addRackToVehicle;}]
+    [["I_E_Offroad_01_comms_F"], {[_this, ["ACRE_VRC103", "Upper Dash", "Dash", false, ["inside","outside"], [], "ACRE_PRC117F", [], []], true] call acre_api_fnc_addRackToVehicle;}]
 
 ];
