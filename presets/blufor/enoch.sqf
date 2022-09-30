@@ -26,7 +26,7 @@ KP_liberation_truck_classname = "I_E_Truck_02_transport_F";             // These
 KP_liberation_small_storage_building = "ContainmentArea_02_sand_F";     // A small storage area for resources.
 KP_liberation_large_storage_building = "ContainmentArea_01_sand_F";     // A large storage area for resources.
 KP_liberation_recycle_building = "Land_Repair_center";                  // The building defined to unlock FOB recycling functionality.
-KP_liberation_crate_filler_building = "Land_Rail_Warehouse_Small_F";    // The building defined to unlock Crate Filler functionality. 
+KP_liberation_logistics_building = "Land_Rail_Warehouse_Small_F";       // The building defined to unlock Crate Filler functionality. 
 KP_liberation_air_vehicle_building = "Land_MobileRadar_01_radar_F";     // The building defined to unlock FOB air vehicle functionality.
 KP_liberation_heli_slot_building = "Land_HelipadSquare_F";              // The helipad used to increase the GLOBAL rotary-wing cap.
 KP_liberation_plane_slot_building = "Land_TentHangar_V1_F";             // The hangar used to increase the GLOBAL fixed-wing cap.
@@ -76,7 +76,6 @@ light_vehicles = [
     ["I_E_Offroad_01_F",60,0,35],                                       // Offroad
     ["I_E_Offroad_01_covered_F",60,0,35],                               // Offroad (Covered)
     ["I_E_Offroad_01_comms_F",60,0,35],                                 // Offroad (Comms)
-    ["B_T_Truck_01_flatbed_F",60,0,40],                                 // HEMTT Flatbed
     ["I_E_Van_02_vehicle_F",70,0,45],                                   // Transporter
     ["I_E_Van_02_transport_MP_F",70,0,45],                              // Transporter (MP)
     ["I_E_Van_02_transport_F",70,0,45],                                 // Transporter (Transporter)
@@ -224,23 +223,21 @@ support_vehicles = [
     [KP_liberation_small_storage_building,0,0,0],
     [KP_liberation_large_storage_building,0,0,0],
     [KP_liberation_recycle_building,200,100,0],
-    ["Land_Rail_Warehouse_Small_F",200,100,0],
+    [KP_liberation_logistics_building,200,0,0],
     [KP_liberation_air_vehicle_building,1000,0,0],
     [KP_liberation_heli_slot_building,250,0,0],
     [KP_liberation_plane_slot_building,500,0,0],
     [Arsenal_typename,25,0,0],
     ["ACE_medicalSupplyCrate_advanced",10,0,0],
-    ["Box_East_Support_F",10,0,0],
-    ["Box_CSAT_Equip_F",10,0,0],
-    ["Box_East_Grenades_F",10,0,0],
-    ["Box_East_WpsSpecial_F",10,0,0],
-    ["Box_East_Ammo_F",10,0,0],
-    ["Box_East_Wps_F",10,0,0],
-    ["Box_CSAT_Uniforms_F",10,0,0],
-    ["Box_East_AmmoOrd_F",10,0,0],
     ["ACE_Wheel",10,0,0],
     ["ACE_Track",10,0,0],
-    ["Land_CanisterFuel_F",0,0,2],
+    ["Land_Boxloader_Pallet_5_Net",20,0,0],                             // Master Pallet
+    ["Land_Boxloader_iso_20ft_black",30,0,0],                           // 20-foot container 
+    ["Land_CanisterFuel_F",0,0,2],                                      // Tiny fuel container
+    ["Boxloader_sixcon_fuel",30,0,70],                                  // Boxloader Sixcon
+    ["Boxloader_BigPallet_Repair",275,0,100],                           // Boxloader Repair Pallet
+    ["boxloader_atlas",50,0,25],                                        // Forklift
+    ["B_T_Truck_01_flatbed_F",60,0,40],                                 // HEMTT Flatbed
     ["I_E_Van_02_medevac_F",150,0,80],                                  // Transporter (Ambulance)
     ["CUP_I_T810_Repair_LDF",325,0,75],                                 // Tatra Repair
     ["CUP_I_T810_Refuel_LDF",125,0,275],                                // Tatra Fuel
