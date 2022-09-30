@@ -3864,8 +3864,8 @@
             <Korean>재활용공장</Korean>
             <Czech>Opravárenské Depo</Czech>
         </Key>
-        <Key ID="STR_CRATE_FILLER_BUILDING">
-            <Original>Logistics Center</Original>
+        <Key ID="STR_LOGISTICS_BUILDING">
+            <Original>Logistics Center (WIP!!)</Original>
         </Key>
         <Key ID="STR_HELI_BUILDING">
             <Original>Flight Control</Original>
