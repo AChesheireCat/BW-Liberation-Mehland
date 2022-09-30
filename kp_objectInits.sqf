@@ -91,6 +91,10 @@ KPLIB_objectInits = [
         {_this setVariable ["ace_isRepairFacility", 1, true];}
     ],
     [
+        [KP_liberation_logistics_building],
+        {_this setVariable ["ace_isRepairFacility", 1, true];}
+    ],
+    [
         KP_liberation_medical_facilities,
         {_this setVariable ["ace_medical_isMedicalFacility", true, true];}
     ],
