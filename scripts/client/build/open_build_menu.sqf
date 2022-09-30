@@ -63,7 +63,7 @@ while {dialog && alive player && (dobuild == 0 || buildtype == 1)} do {
                     case KP_liberation_air_vehicle_building: {_entrytext = localize "STR_HELI_BUILDING";};
                     case KP_liberation_heli_slot_building: {_entrytext = localize "STR_HELI_SLOT";};
                     case KP_liberation_plane_slot_building: {_entrytext = localize "STR_PLANE_SLOT";};
-                    case KP_liberation_crate_filler_building: {_entrytext = localize "STR_CRATE_FILLER_BUILDING";};
+                    case KP_liberation_logistics_building: {_entrytext = localize "STR_LOGISTICS_BUILDING";};
                     default {};
                 };
 
